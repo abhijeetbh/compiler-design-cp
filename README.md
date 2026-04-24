@@ -2,8 +2,9 @@
 
 ## Compiler for a subset of C++
 
+Reference: https://web.iitd.ac.in/~sumeet/flex__bison.pdf
+
 <aside>
-💡
 
 Tools to use: Flex, Yacc, and .c files
 
