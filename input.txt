@@ -1,0 +1,76 @@
+#include <stdio.h>
+#define LIMIT 5
+
+// Sample comments
+/* sample
+testing 1,2,3
+comment */
+
+class Student {
+    int rollNo;
+    float marks;
+    int grade;
+    int age;
+
+    Student(int r, float m) {
+        rollNo = r;
+        marks = m;
+        grade = 0;
+        age = 18;
+    }
+
+    int getMarks() {
+        return marks;
+    }
+
+    float computeGrade(int count) {
+        float g = marks / count;
+        return g;
+    }
+
+    void display() {
+        printf("%d", rollNo);
+        printf("%d", age);
+    }
+};
+
+int multiply(int a, int b) {
+    int result = a * b;
+    return result;
+}
+
+int main() {
+    int x = 5;
+    float y = 2.5;
+    int z = 9.99;
+    int mark[LIMIT];
+    int i;
+    for (i = 0; i < LIMIT; i++) {
+        mark[i] = i * 10;
+    }
+    float idx = 1.5;
+    int val = mark[idx];
+    if (x > 3) {
+        if (x > 6) {
+            z = z + 1;
+        } else {
+            z = z - 1;
+        }
+    } else {
+        z = 0;
+    }
+    int j = 0;
+    while (j < LIMIT) {
+        mark[j] = mark[j] + x;
+        j = j + 1;
+    }
+    int total = x + undeclaredVar;
+    Student s(101, 88.5);
+    s.display();
+    int m = s.getMarks();
+    int x = 100;
+    int result = multiply(x, 2);
+    printf("%d", result);
+    return 0;
+}
+

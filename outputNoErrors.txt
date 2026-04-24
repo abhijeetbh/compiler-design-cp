@@ -1,0 +1,162 @@
+TOKENS
+Line 1: HEADER #include <stdio.h>
+Line 2: PREPROCESSOR #define LIMIT 5
+Line 9: KEYWORD class
+Line 9: IDENTIFIER Student
+Line 9: SPECIAL SYMBOL {
+Line 10: KEYWORD int
+Line 10: IDENTIFIER rollNo
+Line 10: SPECIAL SYMBOL ;
+Line 11: KEYWORD float
+Line 11: IDENTIFIER marks
+Line 11: SPECIAL SYMBOL ;
+Line 12: KEYWORD int
+Line 12: IDENTIFIER grade
+Line 12: SPECIAL SYMBOL ;
+Line 13: KEYWORD int
+Line 13: IDENTIFIER age
+Line 13: SPECIAL SYMBOL ;
+Line 15: IDENTIFIER Student
+Line 15: SPECIAL SYMBOL (
+Line 15: KEYWORD int
+Line 15: IDENTIFIER r
+Line 15: SPECIAL SYMBOL ,
+Line 15: KEYWORD float
+Line 15: IDENTIFIER m
+Line 15: SPECIAL SYMBOL )
+Line 15: SPECIAL SYMBOL {
+Line 16: IDENTIFIER rollNo
+Line 16: OPERATOR =
+Line 16: IDENTIFIER r
+Line 16: SPECIAL SYMBOL ;
+Line 17: IDENTIFIER marks
+Line 17: OPERATOR =
+Line 17: IDENTIFIER m
+Line 17: SPECIAL SYMBOL ;
+Line 18: IDENTIFIER grade
+Line 18: OPERATOR =
+Line 18: INTEGER CONSTANT 0
+Line 18: SPECIAL SYMBOL ;
+Line 19: IDENTIFIER age
+Line 19: OPERATOR =
+Line 19: INTEGER CONSTANT 18
+Line 19: SPECIAL SYMBOL ;
+Line 20: SPECIAL SYMBOL }
+Line 22: KEYWORD float
+Line 22: IDENTIFIER getMarks
+Line 22: SPECIAL SYMBOL (
+Line 22: SPECIAL SYMBOL )
+Line 22: SPECIAL SYMBOL {
+Line 23: KEYWORD return
+Line 23: IDENTIFIER marks
+Line 23: SPECIAL SYMBOL ;
+Line 24: SPECIAL SYMBOL }
+Line 26: KEYWORD float
+Line 26: IDENTIFIER computeGrade
+Line 26: SPECIAL SYMBOL (
+Line 26: KEYWORD int
+Line 26: IDENTIFIER count
+Line 26: SPECIAL SYMBOL )
+Line 26: SPECIAL SYMBOL {
+Line 27: KEYWORD float
+Line 27: IDENTIFIER g
+Line 27: OPERATOR =
+Line 27: IDENTIFIER marks
+Line 27: OPERATOR /
+Line 27: IDENTIFIER count
+Line 27: SPECIAL SYMBOL ;
+Line 28: KEYWORD return
+Line 28: IDENTIFIER g
+Line 28: SPECIAL SYMBOL ;
+Line 29: SPECIAL SYMBOL }
+Line 31: KEYWORD void
+Line 31: IDENTIFIER display
+Line 31: SPECIAL SYMBOL (
+Line 31: SPECIAL SYMBOL )
+Line 31: SPECIAL SYMBOL {
+Line 32: PREDEFINED FUNCTION printf
+Line 32: SPECIAL SYMBOL (
+Line 32: STRING LITERAL "%d"
+Line 32: SPECIAL SYMBOL ,
+Line 32: IDENTIFIER rollNo
+Line 32: SPECIAL SYMBOL )
+Line 32: SPECIAL SYMBOL ;
+Line 33: PREDEFINED FUNCTION printf
+Line 33: SPECIAL SYMBOL (
+Line 33: STRING LITERAL "%d"
+Line 33: SPECIAL SYMBOL ,
+Line 33: IDENTIFIER age
+Line 33: SPECIAL SYMBOL )
+Line 33: SPECIAL SYMBOL ;
+Line 34: SPECIAL SYMBOL }
+Line 35: SPECIAL SYMBOL }
+Line 35: SPECIAL SYMBOL ;
+Line 37: KEYWORD int
+Line 37: IDENTIFIER multiply
+Line 37: SPECIAL SYMBOL (
+Line 37: KEYWORD int
+Line 37: IDENTIFIER a
+Line 37: SPECIAL SYMBOL ,
+Line 37: KEYWORD int
+Line 37: IDENTIFIER b
+Line 37: SPECIAL SYMBOL )
+Line 37: SPECIAL SYMBOL {
+Line 38: KEYWORD int
+Line 38: IDENTIFIER result
+Line 38: OPERATOR =
+Line 38: IDENTIFIER a
+Line 38: OPERATOR *
+Line 38: IDENTIFIER b
+Line 38: SPECIAL SYMBOL ;
+Line 39: KEYWORD return
+Line 39: IDENTIFIER result
+Line 39: SPECIAL SYMBOL ;
+Line 40: SPECIAL SYMBOL }
+Line 42: KEYWORD int
+Line 42: MAIN main
+Line 42: SPECIAL SYMBOL (
+Line 42: SPECIAL SYMBOL )
+Line 42: SPECIAL SYMBOL {
+Line 43: KEYWORD int
+Line 43: IDENTIFIER x
+Line 43: OPERATOR =
+Line 43: INTEGER CONSTANT 5
+Line 43: SPECIAL SYMBOL ;
+Line 44: KEYWORD float
+Line 44: IDENTIFIER y
+Line 44: OPERATOR =
+Line 44: FLOAT CONSTANT 2.5
+Line 44: SPECIAL SYMBOL ;
+Line 45: KEYWORD int
+Line 45: IDENTIFIER z
+Line 45: OPERATOR =
+Line 45: INTEGER CONSTANT 9
+Line 45: SPECIAL SYMBOL ;
+Line 46: KEYWORD int
+Line 46: IDENTIFIER marks
+Line 46: SPECIAL SYMBOL [
+Line 46: INTEGER CONSTANT 6
+
+--- SYMBOL TABLE ---
+Name		Type	Scope
+--------------------------------
+rollNo          int     class  
+marks           float   class  
+grade           int     class  
+age             int     class  
+r               int     class  
+m               float   class  
+count           int     class  
+g               float   local  
+a               int     global 
+b               int     global 
+result          int     local  
+x               int     local  
+y               float   local  
+z               int     local  
+--------------------------------
+
+
+ERRORS
+Output: No error
+Code accepted

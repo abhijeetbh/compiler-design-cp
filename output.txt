@@ -1,0 +1,345 @@
+TOKENS
+Line 1: HEADER #include <stdio.h>
+Line 2: PREPROCESSOR #define LIMIT 5
+Line 9: KEYWORD class
+Line 9: IDENTIFIER Student
+Line 9: SPECIAL SYMBOL {
+Line 10: KEYWORD int
+Line 10: IDENTIFIER rollNo
+Line 10: SPECIAL SYMBOL ;
+Line 11: KEYWORD float
+Line 11: IDENTIFIER marks
+Line 11: SPECIAL SYMBOL ;
+Line 12: KEYWORD int
+Line 12: IDENTIFIER grade
+Line 12: SPECIAL SYMBOL ;
+Line 13: KEYWORD int
+Line 13: IDENTIFIER age
+Line 13: SPECIAL SYMBOL ;
+Line 15: IDENTIFIER Student
+Line 15: SPECIAL SYMBOL (
+Line 15: KEYWORD int
+Line 15: IDENTIFIER r
+Line 15: SPECIAL SYMBOL ,
+Line 15: KEYWORD float
+Line 15: IDENTIFIER m
+Line 15: SPECIAL SYMBOL )
+Line 15: SPECIAL SYMBOL {
+Line 16: IDENTIFIER rollNo
+Line 16: OPERATOR =
+Line 16: IDENTIFIER r
+Line 16: SPECIAL SYMBOL ;
+Line 17: IDENTIFIER marks
+Line 17: OPERATOR =
+Line 17: IDENTIFIER m
+Line 17: SPECIAL SYMBOL ;
+Line 18: IDENTIFIER grade
+Line 18: OPERATOR =
+Line 18: INTEGER CONSTANT 0
+Line 18: SPECIAL SYMBOL ;
+Line 19: IDENTIFIER age
+Line 19: OPERATOR =
+Line 19: INTEGER CONSTANT 18
+Line 19: SPECIAL SYMBOL ;
+Line 20: SPECIAL SYMBOL }
+Line 22: KEYWORD int
+Line 22: IDENTIFIER getMarks
+Line 22: SPECIAL SYMBOL (
+Line 22: SPECIAL SYMBOL )
+Line 22: SPECIAL SYMBOL {
+Line 23: KEYWORD return
+Line 23: IDENTIFIER marks
+Line 23: SPECIAL SYMBOL ;
+Semantic Error at line 23: return type mismatch: function declared as 'int' but returns 'float'
+Line 24: SPECIAL SYMBOL }
+Line 26: KEYWORD float
+Line 26: IDENTIFIER computeGrade
+Line 26: SPECIAL SYMBOL (
+Line 26: KEYWORD int
+Line 26: IDENTIFIER count
+Line 26: SPECIAL SYMBOL )
+Line 26: SPECIAL SYMBOL {
+Line 27: KEYWORD float
+Line 27: IDENTIFIER g
+Line 27: OPERATOR =
+Line 27: IDENTIFIER marks
+Line 27: OPERATOR /
+Line 27: IDENTIFIER count
+Line 27: SPECIAL SYMBOL ;
+Line 28: KEYWORD return
+Line 28: IDENTIFIER g
+Line 28: SPECIAL SYMBOL ;
+Line 29: SPECIAL SYMBOL }
+Line 31: KEYWORD void
+Line 31: IDENTIFIER display
+Line 31: SPECIAL SYMBOL (
+Line 31: SPECIAL SYMBOL )
+Line 31: SPECIAL SYMBOL {
+Line 32: PREDEFINED FUNCTION printf
+Line 32: SPECIAL SYMBOL (
+Line 32: STRING LITERAL "%d"
+Line 32: SPECIAL SYMBOL ,
+Line 32: IDENTIFIER rollNo
+Line 32: SPECIAL SYMBOL )
+Line 32: SPECIAL SYMBOL ;
+Line 33: PREDEFINED FUNCTION printf
+Line 33: SPECIAL SYMBOL (
+Line 33: STRING LITERAL "%d"
+Line 33: SPECIAL SYMBOL ,
+Line 33: IDENTIFIER age
+Line 33: SPECIAL SYMBOL )
+Line 33: SPECIAL SYMBOL ;
+Line 34: SPECIAL SYMBOL }
+Line 35: SPECIAL SYMBOL }
+Line 35: SPECIAL SYMBOL ;
+Line 37: KEYWORD int
+Line 37: IDENTIFIER multiply
+Line 37: SPECIAL SYMBOL (
+Line 37: KEYWORD int
+Line 37: IDENTIFIER a
+Line 37: SPECIAL SYMBOL ,
+Line 37: KEYWORD int
+Line 37: IDENTIFIER b
+Line 37: SPECIAL SYMBOL )
+Line 37: SPECIAL SYMBOL {
+Line 38: KEYWORD int
+Line 38: IDENTIFIER result
+Line 38: OPERATOR =
+Line 38: IDENTIFIER a
+Line 38: OPERATOR *
+Line 38: IDENTIFIER b
+Line 38: SPECIAL SYMBOL ;
+Line 39: KEYWORD return
+Line 39: IDENTIFIER result
+Line 39: SPECIAL SYMBOL ;
+Line 40: SPECIAL SYMBOL }
+Line 42: KEYWORD int
+Line 42: MAIN main
+Line 42: SPECIAL SYMBOL (
+Line 42: SPECIAL SYMBOL )
+Line 42: SPECIAL SYMBOL {
+Line 43: KEYWORD int
+Line 43: IDENTIFIER x
+Line 43: OPERATOR =
+Line 43: INTEGER CONSTANT 5
+Line 43: SPECIAL SYMBOL ;
+Line 44: KEYWORD float
+Line 44: IDENTIFIER y
+Line 44: OPERATOR =
+Line 44: FLOAT CONSTANT 2.5
+Line 44: SPECIAL SYMBOL ;
+Line 45: KEYWORD int
+Line 45: IDENTIFIER z
+Line 45: OPERATOR =
+Line 45: FLOAT CONSTANT 9.99
+Line 45: SPECIAL SYMBOL ;
+Semantic Error at line 45: cannot assign float value to int variable 'z'
+Line 46: KEYWORD int
+Line 46: IDENTIFIER mark
+Line 46: SPECIAL SYMBOL [
+Line 46: IDENTIFIER LIMIT
+Line 46: SPECIAL SYMBOL ]
+Line 46: SPECIAL SYMBOL ;
+Line 47: KEYWORD int
+Line 47: IDENTIFIER i
+Line 47: SPECIAL SYMBOL ;
+Line 48: KEYWORD for
+Line 48: SPECIAL SYMBOL (
+Line 48: IDENTIFIER i
+Line 48: OPERATOR =
+Line 48: INTEGER CONSTANT 0
+Line 48: SPECIAL SYMBOL ;
+Line 48: IDENTIFIER i
+Line 48: OPERATOR <
+Line 48: IDENTIFIER LIMIT
+Line 48: SPECIAL SYMBOL ;
+Line 48: IDENTIFIER i
+Line 48: OPERATOR +
+Line 48: OPERATOR +
+Line 48: SPECIAL SYMBOL )
+Line 48: SPECIAL SYMBOL {
+Line 49: IDENTIFIER mark
+Line 49: SPECIAL SYMBOL [
+Line 49: IDENTIFIER i
+Line 49: SPECIAL SYMBOL ]
+Line 49: OPERATOR =
+Line 49: IDENTIFIER i
+Line 49: OPERATOR *
+Line 49: INTEGER CONSTANT 10
+Line 49: SPECIAL SYMBOL ;
+Line 50: SPECIAL SYMBOL }
+Line 51: KEYWORD float
+Line 51: IDENTIFIER idx
+Line 51: OPERATOR =
+Line 51: FLOAT CONSTANT 1.5
+Line 51: SPECIAL SYMBOL ;
+Line 52: KEYWORD int
+Line 52: IDENTIFIER val
+Line 52: OPERATOR =
+Line 52: IDENTIFIER mark
+Line 52: SPECIAL SYMBOL [
+Line 52: IDENTIFIER idx
+Line 52: SPECIAL SYMBOL ]
+Semantic Error at line 52: array index must be an integer
+Line 52: SPECIAL SYMBOL ;
+Line 53: KEYWORD if
+Line 53: SPECIAL SYMBOL (
+Line 53: IDENTIFIER x
+Line 53: OPERATOR >
+Line 53: INTEGER CONSTANT 3
+Line 53: SPECIAL SYMBOL )
+Line 53: SPECIAL SYMBOL {
+Line 54: KEYWORD if
+Line 54: SPECIAL SYMBOL (
+Line 54: IDENTIFIER x
+Line 54: OPERATOR >
+Line 54: INTEGER CONSTANT 6
+Line 54: SPECIAL SYMBOL )
+Line 54: SPECIAL SYMBOL {
+Line 55: IDENTIFIER z
+Line 55: OPERATOR =
+Line 55: IDENTIFIER z
+Line 55: OPERATOR +
+Line 55: INTEGER CONSTANT 1
+Line 55: SPECIAL SYMBOL ;
+Line 56: SPECIAL SYMBOL }
+Line 56: KEYWORD else
+Line 56: SPECIAL SYMBOL {
+Line 57: IDENTIFIER z
+Line 57: OPERATOR =
+Line 57: IDENTIFIER z
+Line 57: OPERATOR -
+Line 57: INTEGER CONSTANT 1
+Line 57: SPECIAL SYMBOL ;
+Line 58: SPECIAL SYMBOL }
+Line 59: SPECIAL SYMBOL }
+Line 59: KEYWORD else
+Line 59: SPECIAL SYMBOL {
+Line 60: IDENTIFIER z
+Line 60: OPERATOR =
+Line 60: INTEGER CONSTANT 0
+Line 60: SPECIAL SYMBOL ;
+Line 61: SPECIAL SYMBOL }
+Line 62: KEYWORD int
+Line 62: IDENTIFIER j
+Line 62: OPERATOR =
+Line 62: INTEGER CONSTANT 0
+Line 62: SPECIAL SYMBOL ;
+Line 63: KEYWORD while
+Line 63: SPECIAL SYMBOL (
+Line 63: IDENTIFIER j
+Line 63: OPERATOR <
+Line 63: IDENTIFIER LIMIT
+Line 63: SPECIAL SYMBOL )
+Semantic Error at line 63: undeclared variable 'LIMIT'
+Line 63: SPECIAL SYMBOL {
+Line 64: IDENTIFIER mark
+Line 64: SPECIAL SYMBOL [
+Line 64: IDENTIFIER j
+Line 64: SPECIAL SYMBOL ]
+Line 64: OPERATOR =
+Line 64: IDENTIFIER mark
+Line 64: SPECIAL SYMBOL [
+Line 64: IDENTIFIER j
+Line 64: SPECIAL SYMBOL ]
+Line 64: OPERATOR +
+Line 64: IDENTIFIER x
+Line 64: SPECIAL SYMBOL ;
+Line 65: IDENTIFIER j
+Line 65: OPERATOR =
+Line 65: IDENTIFIER j
+Line 65: OPERATOR +
+Line 65: INTEGER CONSTANT 1
+Line 65: SPECIAL SYMBOL ;
+Line 66: SPECIAL SYMBOL }
+Line 67: KEYWORD int
+Line 67: IDENTIFIER total
+Line 67: OPERATOR =
+Line 67: IDENTIFIER x
+Line 67: OPERATOR +
+Line 67: IDENTIFIER undeclaredVar
+Line 67: SPECIAL SYMBOL ;
+Semantic Error at line 67: undeclared variable 'undeclaredVar'
+Line 68: IDENTIFIER Student
+Line 68: IDENTIFIER s
+Line 68: SPECIAL SYMBOL (
+Line 68: INTEGER CONSTANT 101
+Line 68: SPECIAL SYMBOL ,
+Line 68: FLOAT CONSTANT 88.5
+Line 68: SPECIAL SYMBOL )
+Line 68: SPECIAL SYMBOL ;
+Line 69: IDENTIFIER s
+Line 69: SPECIAL SYMBOL .
+Line 69: IDENTIFIER display
+Line 69: SPECIAL SYMBOL (
+Line 69: SPECIAL SYMBOL )
+Line 69: SPECIAL SYMBOL ;
+Line 70: KEYWORD int
+Line 70: IDENTIFIER m
+Line 70: OPERATOR =
+Line 70: IDENTIFIER s
+Line 70: SPECIAL SYMBOL .
+Line 70: IDENTIFIER getMarks
+Line 70: SPECIAL SYMBOL (
+Line 70: SPECIAL SYMBOL )
+Line 70: SPECIAL SYMBOL ;
+Line 71: KEYWORD int
+Line 71: IDENTIFIER x
+Line 71: OPERATOR =
+Line 71: INTEGER CONSTANT 100
+Line 71: SPECIAL SYMBOL ;
+Semantic Error at line 71: variable 'x' already declared in this scope
+Line 72: KEYWORD int
+Line 72: IDENTIFIER result
+Line 72: OPERATOR =
+Line 72: IDENTIFIER multiply
+Line 72: SPECIAL SYMBOL (
+Line 72: IDENTIFIER x
+Line 72: SPECIAL SYMBOL ,
+Line 72: INTEGER CONSTANT 2
+Line 72: SPECIAL SYMBOL )
+Line 72: SPECIAL SYMBOL ;
+Semantic Error at line 72: variable 'result' already declared in this scope
+Line 73: PREDEFINED FUNCTION printf
+Line 73: SPECIAL SYMBOL (
+Line 73: STRING LITERAL "%d"
+Line 73: SPECIAL SYMBOL ,
+Line 73: IDENTIFIER result
+Line 73: SPECIAL SYMBOL )
+Line 73: SPECIAL SYMBOL ;
+Line 74: KEYWORD return
+Line 74: INTEGER CONSTANT 0
+Line 74: SPECIAL SYMBOL ;
+Line 75: SPECIAL SYMBOL }
+
+--- SYMBOL TABLE ---
+Name		Type	Scope
+--------------------------------
+rollNo          int     class  
+marks           float   class  
+grade           int     class  
+age             int     class  
+r               int     class  
+m               float   class  
+count           int     class  
+g               float   local  
+a               int     global 
+b               int     global 
+result          int     local  
+x               int     local  
+y               float   local  
+z               int     local  
+mark            int     local  
+i               int     local  
+idx             float   local  
+val             int     local  
+j               int     local  
+total           int     local  
+s               other   local  
+m               int     local  
+--------------------------------
+
+
+ERRORS
+Errors: 7
+Program not accepted.
